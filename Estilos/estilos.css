@@ -1,0 +1,917 @@
+@font-face {
+  font-family: 'lemon';
+  src: url(../Fontes/LEMONMILK-Regular.otf);
+}
+
+/* Zera margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(204, 204, 204, 0.95);
+  height: 100px;
+  width: 100%;
+  padding: 20px 18.5%;
+  z-index: 10;
+}
+
+.logo img{
+  width: 110px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover{
+  transform: scale(1.1);
+}
+
+.box_contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 26.5%;
+}
+  
+.box_contatoInfo{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.box_contatoInfo img{
+  width: 13px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.box_contatoInfo p{
+  font-size: 10px;
+  font-family: 'Lemon';
+}
+
+.menu button {
+  font-family: 'lemon';
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 40px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 11px;
+  color: white;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.menu button:hover{
+  transform: scale(1.05);
+}
+
+  .menu-btn:hover {
+    color: white;
+  }
+
+  .menu-btn:last-child {
+    margin-right: 285px;
+  }
+  
+  /* Seção de imagem */
+  .fundo {
+    position: relative;
+    overflow: hidden;
+    height: 620px; /* A altura da imagem, você pode ajustar */
+    border-bottom-right-radius: 100px; /* Curvatura na borda inferior direita */
+  }
+
+.fundoViewSecundaria{
+  position: relative;
+  overflow: hidden;
+  height: 500px; 
+  border-bottom-right-radius: 100px; 
+}
+  
+.imgFundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da imagem */
+  z-index: 1;
+}
+
+.div_sectionContatoText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px; 
+}
+
+.div_sectionContatoText h1{
+  font-size: 28px;
+  font-family: 'lemon';
+  color: #ff5722;
+  width: 600px;  
+  animation: blinkTextTituloPp 4s ease forwards;  
+}
+
+.div_sectionContatoText p{
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  width: 800px; 
+  line-height: 1.6;
+  margin-top: 15px;
+  margin-bottom: 15px; 
+  animation: blinkTextTituloPp 4s ease forwards;
+}
+
+.pp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+    padding-top: 50px;
+}
+
+  .corpoPp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .tituloPp{
+    font-size: 28px;
+    font-family: 'lemon';
+    color: #ff5722;
+    width: 600px;  
+    animation: blinkTextTituloPp 4s ease forwards; /* Animação para piscar */
+  }
+
+  @keyframes blinkTextTituloPp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px); /* Começa 20px abaixo */
+    } 
+    50% {
+      opacity: 1;
+      transform: translateY(0); /* Alcança a posição normal */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Fica na posição final */
+    }
+  }
+
+  .subTituloPp{
+    font-size: 16px; /* Texto menor */
+    color: rgb(87, 87, 87);
+    width: 800px; 
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    animation: blinkTextTituloPp 4s ease forwards;
+  }
+  
+  /* Para garantir que o conteúdo seguinte fique abaixo da imagem */
+  section {
+    /*padding: 20px;*/
+    background-color: #f5f5f5;
+  }
+
+.sectionWpp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionWpp img{
+  width: 90px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sectionWpp img:hover{
+  transform: scale(1.1);
+}
+
+
+.sectionWpp h2{
+  display: flex;
+  font-size: 24px;
+  font-family: 'lemon';
+  color: #1d1d1d;
+  margin-bottom: 30px;
+}
+
+.sectionEmail{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.sectionEmail h2{
+  display: flex;
+  align-self: center;
+  font-size: 28px;
+  font-family: 'lemon';
+  color: #1d1d1d;
+  margin-bottom: 30px;
+}
+
+.div_email{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.div_email label{
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  margin-bottom: 10px; 
+  margin-top: 10px;
+}
+
+.div_email input{
+  font-family: 'Arial';
+  background-color: #f3f3f3;
+  width: 480px;
+  height: 50px;
+  border: 1px solid;
+  border-color: #d4d4d4;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.div_email textarea{
+  font-family: 'Arial';
+  background-color: #f3f3f3;
+  width: 480px;
+  height: 80px;
+  border: 1px solid;
+  border-color: #d4d4d4;
+  border-radius: 3px;
+  padding:10px;
+}
+
+.div_email button{
+  font-family: 'lemon';
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 45px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  margin-top: 15px;
+  box-shadow: 0 2px 4px rgba(194, 194, 194, 0.5);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.div_email button:hover{
+  background-color: #fff; /* Nova cor de fundo ao passar o mouse */
+  color: #ff5722; /* Nova cor de texto ao passar o mouse */
+}
+
+/* Centraliza o conteúdo */
+.content {
+    position: absolute;
+    top: 55%;
+    left: 20%; /* Move um pouco à esquerda do centro */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à direita */
+    z-index: 2;
+}
+
+/* Estilos para o texto maior */
+.big-text {
+    font-family: 'lemon';
+    font-size: 32px; /* Texto maior */
+    color: white;
+    margin-bottom: 10px;
+    text-align: left; /* Alinha o texto à direita */
+    width: 350px;
+    opacity: 0; /* Começa invisível */
+    animation: blinkText 4s ease forwards; /* Animação para piscar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 1, 0.1);
+}
+
+/* Estilos para o texto menor */
+.imgFundoSubTitulo {
+    font-size: 16px; /* Texto menor */
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o texto à direita */
+    width: 500px;
+    opacity: 0; /* Começa invisível */
+    text-shadow: 1 3px 2px #252525;
+    animation: blinkText 4s ease forwards; /* Animação para piscar */
+}
+
+/* Animação para piscar o texto */
+@keyframes blinkText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos para o botão de ação */
+.action-btn {
+    background-color: #ff5722;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    position: relative; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: slideIn 0.8s ease-out forwards;
+    box-shadow: 0 2px 4px rgba(194, 194, 194, 0.5);
+}
+
+/* Keyframes para a animação do botão */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px); /* Posição inicial deslocada */
+    opacity: 0; /* Invisível no início */
+  }
+  to {
+    transform: translateX(0); /* Posição final (normal) */
+    opacity: 1; /* Visível no final */
+  }
+}
+
+.botaoPp{
+    margin-top: 15px;
+    background-color: #ff5722;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(194, 194, 194, 0.5);
+}
+
+ .botaoPp:hover {
+    background-color: #fff; /* Nova cor de fundo ao passar o mouse */
+    color: #ff5722; /* Nova cor de texto ao passar o mouse */
+}
+
+ /* Efeito de hover (ao passar o mouse por cima) */
+.action-btn:hover {
+    background-color: #fff; /* Nova cor de fundo ao passar o mouse */
+    color: #ff5722; /* Nova cor de texto ao passar o mouse */
+}
+
+/* Para garantir que o conteúdo seguinte fique abaixo da imagem */
+section {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .rectangle-section {
+    margin-top: 15px;
+    display: flex; /* Organiza os retângulos em linha */
+    justify-content: center; /* Espaçamento igual entre os retângulos */
+  }
+  
+  .rectangle {
+    width: 330px; /* Largura dos retângulos */
+    height: 215px; /* Altura dos retângulos */
+    border: none; /* Borda dos retângulos */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 25px; /* Espaçamento interno do retângulo */
+    margin-top: 30px;
+    margin-right: 135px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.18); /* Sombra suave */
+    position: relative; /* Para posicionar a imagem */
+  }
+
+  .rectangle:last-child {
+    margin-right: 0; /* Remove o espaço à direita do último retângulo */
+  }
+  
+.rectangleTitulo{
+  color: rgb(15, 15, 15);
+  font-size: 20px;
+}
+
+  .rectangle-image {
+    width: 49px; /* Largura da imagem */
+    height: 49px; /* Altura da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+  }
+  
+  .rectangle-text {
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color:  rgb(87, 87, 87); /* Cor do texto */
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+
+  .sectionSolucoesB9 {
+    display: flex; /* Coloca os textos e a imagem lado a lado */
+    justify-content: space-between; /* Espaço máximo entre os textos e a imagem */
+    padding-right: 250px;
+    padding-left: 250px;
+    height: 800px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(31, 31, 31, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .section_quemSomosCorpo{
+    display: flex;
+    justify-content: space-between;  
+    padding: 10px 18.5%;
+    padding-top: 75px;
+    margin-bottom: 40px;
+  }
+
+.div_quemSomosCorpoTexto{
+  align-self: center;
+}
+
+.div_quemSomosCorpoTexto h1{
+    font-family: 'lemon';
+    font-size: 28px;
+}
+
+.div_quemSomosCorpoTexto p{
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+.div_quemSomosCorpoImagem{
+  padding-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.img_quemSomos{
+  width: 260px; /* Faz a imagem ocupar toda a largura da div de imagem */
+  height: auto;  
+  border-radius: 10px;
+}
+
+  .sectionDesafios{
+    display: flex;
+    justify-content: space-between;  
+    padding-right: 250px;
+    padding-left: 100px;
+    margin-bottom: 130px;
+    height: 680px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(31, 31, 31, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+
+.sectionCorpoServicos{
+  display: flex; /* Organiza os retângulos em linha */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div_coproServicos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 75px;
+}
+
+.div_CorpoServicosl1{
+  display: flex;
+  justify-content: center;
+  gap: 10px;  
+}
+
+.div_rectanglesContato{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rectangle_servicos{
+  border: none;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.18); /* Sombra suave */
+  width: 330px; /* Largura dos retângulos */
+  height: 215px;  
+}
+
+.sectionContatoText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  background-color: transparent;
+  padding-top: 50px;
+}
+
+.sectionContatoMap{
+  margin-top: 75px;
+}
+
+.div_mapa{
+  text-align: center;
+}
+
+.rectangle_contato{
+  border: none;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.18); /* Sombra suave */
+  width: 330px; /* Largura dos retângulos */
+  height: 160px;   
+}
+
+.rectangle_contato img{
+  width: 49px; /* Largura da imagem */
+  height: auto; /* Altura da imagem */   
+}
+
+.rectangle_servicos img{
+  width: 49px; /* Largura da imagem */
+  height: 49px; /* Altura da imagem */
+}
+
+.rectangle_contato h1{
+  color: rgb(15, 15, 15);
+  font-size: 20px;
+  margin-top: 10px; 
+}
+
+.rectangle_servicos h1{
+  color: rgb(15, 15, 15);
+  font-size: 20px;
+}
+
+.rectangle_contato p{
+  font-size: 16px; /* Tamanho da fonte do texto */
+  color:  rgb(87, 87, 87); /* Cor do texto */
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+.rectangle_servicos p{
+  font-size: 16px; /* Tamanho da fonte do texto */
+  color:  rgb(87, 87, 87); /* Cor do texto */
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+  .div_textSolB9{
+    max-width: 50%; /* Limita a largura dos textos a 50% da seção */
+    margin-top: 130px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div_textDesafios{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;   
+    margin-top: 30px;
+    padding-left: 160px;
+    text-align: center;
+  }
+  
+  .div_textDesafios h2{
+    font-family: 'lemon';
+    font-size: 28px;
+  }
+
+  .div_textDesafios h1{
+    margin-top: 15px;
+    font-family: 'lemon';
+    font-size: 34px;  
+    color: #ff5722;
+  }
+
+  .div_textSolB9 h2 {
+    font-family: 'lemon';
+    font-size: 28px;
+  }
+
+  .div_textDesafios p {
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+    line-height: 1.8;
+    margin-top: 15px;
+  }
+
+.img_InfinitoAzul{
+  height: 95px;  
+  display: block;
+  /*margin: 0 auto;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Suaviza a transformação */
+  margin: auto;
+}
+
+.img_Infitino{
+  display: block;
+  width: 130px;
+  align-self: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.img_logoDesafios{
+  width: 100px;
+  height: auto;
+  align-self: center;
+  margin: 0px;
+}
+
+.img_InfinitoAzul img:hover {
+  transform: scale(1.2);
+  filter: grayscale(100%) brightness(0) saturate(0) hue-rotate(0deg); /* Transforma a imagem em escala de cinza e depois muda a cor */
+}
+
+/* Adiciona um fundo colorido ao hover */
+.div_textDesafios:hover::before {
+  content: ""; /* Necessário para criar o pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.5); /* Cor desejada (exemplo: vermelho) */
+  opacity: 1; /* Torna a sobreposição visível ao passar o mouse */
+  transition: opacity 0.3s ease-in-out; /* Suaviza a transição da opacidade */
+}
+  
+  .div_textSolB9 p {
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+    line-height: 1.8;
+    margin-top: 15px;
+  }
+
+  .div_imgSolB9 {
+    position: relative;
+    max-width: 54%;
+    align-self: center;
+  }
+
+  .div_imgDesafios{
+    position: relative;
+    max-width: 50%;
+    align-self: center;  
+  }
+  
+  .side-image {
+    margin-left: 70px;
+    width: 100%; /* Faz a imagem ocupar toda a largura da div de imagem */
+    height: 590px; /* Mantém a proporção da imagem */
+    border-radius: 20px; /* Bordas arredondadas para a imagem */
+    object-fit: cover;
+  }
+
+.side-imageDesafios{
+  width: 100%;  
+  margin-left: 100px;
+  margin-top: 60px;
+  height: 640px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.div_rectangleLocalizacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  top: 360px; /* Ajuste conforme necessário */
+  left: 0; /* Ajuste conforme necessário */
+  position: absolute; /* Para que o div seja posicionado sobre a imagem */
+  border-radius: 10px;
+  width: 350px; /* Tamanho do retângulo */
+  height: 176px; /* Tamanho do retângulo */
+  background: linear-gradient(90deg,rgb(255, 87, 34),rgba(97, 96, 96, 0.94));
+  z-index: 10; /* Garante que o retângulo fique sobre a imagem */
+  
+  box-shadow: 0 4px 6px rgba(75, 75, 75, 0.5);
+}
+
+.div_rectangleDesafios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  top: 0px;
+  left: 270px;
+
+  position: absolute;
+  z-index: 10; /* Garante que o retângulo fique sobre a imagem */
+
+  margin-left: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  border-radius: 10px;
+
+  width: 230px; /* Tamanho do retângulo */
+  height: 230px; /* Tamanho do retângulo */
+
+  background: linear-gradient(180deg,rgb(255, 87, 34),rgba(97, 96, 96, 0.94));
+  box-shadow: 0 4px 6px rgba(75, 75, 75, 0.5);
+}
+
+.div_rectangleLocalizacaoTitulo{
+  color: white;
+  font-size: 20px; 
+  margin: 0;
+}
+
+.div_rectangleLocalizacaoSubTitulo{
+  font-size: 16px;
+  color:  white;
+  line-height: 1.2;
+  margin-top: 18px;
+  margin-left: 37px;
+  margin-right: 37px;
+}
+
+.div_rectangleLocalizacaoImagem{
+  width: 46px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.div_infoHeader{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn_solucoesB9{
+  position: relative;
+  
+  background-color: transparent;
+  border: #4b4b4b solid 0.2px;
+  /*padding: 15px 30px;*/
+  margin-top: 15px;
+  font-size: 16px;
+  color: #252525;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5px;
+  width: 148px;
+  height: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.btn_solucoesB9:hover {
+  background-color: #252525; /* Nova cor de fundo ao passar o mouse */
+  color: #ffffff; /* Nova cor de texto ao passar o mouse */
+}
+
+.seta{
+  margin-left: 10px;
+  width: 14px;  
+  transition: filter 0.3s ease;
+}
+
+.btn_solucoesB9:hover .seta {
+  filter: brightness(0) invert(1); /* Inverte as cores da seta ao passar o mouse */
+}
+
+.p_descricaoBrancoCentralizado{
+  font-size: 16px;
+  color:  white;
+  line-height: 1.2; 
+  text-align: center;
+  margin-top: 20px;   
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.div_iconesDesafios{
+  position: relative;
+  top: 223px;
+  width: 20px;
+  height: auto;
+}
+
+.div_footerSuperior{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 20px 18.5%;
+  background-color: rgba(247, 247, 247, 0.95);
+  margin-top: 15px;
+}
+
+.div_footerSupInfoIcone{
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  margin-right: 30px;
+}
+
+.div_footerSupInfoIcone h1{
+  font-size: 15px;
+  color: rgb(39, 39, 39);
+  text-align: center;
+}
+
+.div_footerInferior{
+  display: flex;/*Habilita os alinhamentos a baixo*/
+  justify-content: center; /*Usei pra alinhar na horizontal*/
+  align-items: center;/*Usei pra alinhar na vertical*/
+  height: 55px;
+  background-color: rgb(39, 39, 39);
+}
+
+.div_footerInferior h1{
+  font-size: 14px;
+  color: white;
+}
+
+.footer_corpo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*margin-top: 130px;*/
+  height: 200px;
+}
+
+.div_footerSuperiorInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div_teste{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.div_teste img{
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.div_teste img:hover{
+  transform: scale(1.2);
+}
+
+.icon_rodape{
+  margin-right: 12px;
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.icon_rodape:hover{
+  transform: scale(1.2);
+}
